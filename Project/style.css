@@ -552,6 +552,10 @@ i{
 	margin-bottom: 10px;
 }
 
+.img_full_more:hover{
+	transform: scale(1.2);
+}
+
 @keyframes rotate{
 	from {
 		transform: rotate(0deg);
