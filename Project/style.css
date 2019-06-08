@@ -70,6 +70,17 @@ body {
     border-left: none;
 }
 
+@media (max-width: 768px){
+	.feature_item{
+		border-left: none;
+		border-top: 1px solid #d9d9d9;
+	}
+	
+	.feature_item:first-child {
+    border-top: none;
+}
+}
+
 .feature_item p {
     font-size: 16px;
 }
@@ -504,6 +515,10 @@ p:first-letter{
 	margin: 10px;
 }
 
+.galery_image:hover{
+	box-shadow: 0 0 20px black;
+}
+
 .reviews {
 	margin-top: 100px;
 }
@@ -514,7 +529,7 @@ i{
 
 .img_full_1{
 	float: right;
-	margin-right: 5px;
+	margin-right: 1px;
 	margin-left: 10px;
 	border-radius: 10px;
 }
@@ -537,11 +552,34 @@ i{
 	margin-bottom: 10px;
 }
 
+@keyframes rotate{
+	from {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 .img_full{
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
 	margin: 15px;
+	animation: rotate 12s ease-in-out infinite;
+}
+
+@keyframes bonus{
+	from{
+		text-shadow: 0 0 20px pink;
+	}
+	
+	to{
+		text-shadow: 0 0 20px blue;
+	}
 }
 
 .bonus{
@@ -550,12 +588,14 @@ i{
 	border-radius: 50%;
 	background-color: #91D7FF;
 	margin: 15px;
+	
 }
 
 .bonus p {
 	text-align: center;
 	padding: 5px;
 	padding-top: 70px;
+	animation: bonus 6s ease-in-out infinite;
 }
 
 .flex_bonus{
