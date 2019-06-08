@@ -79,6 +79,9 @@ body {
 	.feature_item:first-child {
     border-top: none;
 }
+h1{
+	font-size: medium;
+}
 }
 
 .feature_item p {
